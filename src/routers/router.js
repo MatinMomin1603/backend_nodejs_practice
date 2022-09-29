@@ -70,8 +70,6 @@ router.post("/employee", async(req, res) => {
         res.status(400).send(error);
     }
 })
-
-
 router.patch("/employee", async(req, res) => {
     try {
         const _id =  moongoose.Types.ObjectId(req.body._id) ;
